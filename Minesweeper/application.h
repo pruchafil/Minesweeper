@@ -1,0 +1,9 @@
+////////////////////////////////////////////////
+//  2023 Prùcha Filip <prucha.fil@gmail.com>  //
+////////////////////////////////////////////////
+
+#include "pch.h"
+
+struct application : public wxApp {
+    bool OnInit() override;
+};
