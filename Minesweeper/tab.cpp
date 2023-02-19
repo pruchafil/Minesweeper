@@ -124,7 +124,8 @@ void tab::dig_around(int32_t _X, int32_t _Y) {
     if(
         _X < 0 || _X >= g_field_size_x ||
         _Y < 0 || _Y >= g_field_size_y ||
-        buttons_[_Y][_X]->GetLabel() != "" // is not exposed
+        buttons_[_Y][_X]->GetLabel() != "" ||               // is not exposed
+        buttons_[_Y][_X]->GetBackgroundColour() == *wxRED   // is selected as minefield
     )
         return;
 
