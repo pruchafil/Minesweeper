@@ -24,4 +24,5 @@ private:
 	void select_mindfield(wxEvent&);
 	void dig_around(int32_t, int32_t);
 	void tick(wxTimerEvent&);
+	void reset();
 };
